@@ -1,4 +1,5 @@
 import video from "../data/video.js";
+import CommentList from "./CommentList";
 
 function App() {
   console.log("Here's your data:", video);
@@ -13,8 +14,10 @@ function App() {
         allowfullscreen
         title="Thinking in React"
       />
+      <CommentList comments = {video.comments} />
     </div>
   );
 }
 
 export default App;
+
