@@ -12,8 +12,13 @@ function CommentList(comments)
         return (<CommentItem user = {com.user} comment = {com.comment}></CommentItem>)
     })
     console.log(list)
-    return (<div>{list}</div>)
-
+    return (
+    <div>
+        <h2>{comments.comments.length} Comments </h2>
+        {list}
+    </div>
+       
+       )
 
 }
 
